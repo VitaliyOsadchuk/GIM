@@ -1,0 +1,170 @@
+:root{
+    --navBlue: #305296;
+    --backGrWhite: #CBDCEB;
+    --border: #163657;
+    --hover: #033a70;
+    --menuText:#CBDCEB;
+    --htext: #033a70;
+    --ptext: #3A6D8C;
+}
+
+.darkmode{
+    --navBlue: #4f5052;
+    --backGrWhite: #1c1d1f;
+    --border: #23295f;
+    --hover: #405985;
+    --menuText:#CBDCEB;
+    --htext: #405985;
+    --ptext: #A6AEBF;
+}
+
+main{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-top: calc(80px + 1vh);
+}
+
+section:not(:first-of-type){
+    padding-top: calc(55px + 1vh);
+}
+
+#pool-c, #pool-a, #sauna-zone, #gym-zone, #fitness-zone, #acafe, #shop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+h1{
+    color: var(--htext);
+    text-align: center;
+    line-height: 1;
+    font-size: calc(28px + 1vw);
+    font-weight: 700;
+    margin-top: 1vh;
+    margin-bottom: 1.1vh;
+}
+
+h2{
+    font-size: calc(16px + 1vw);
+    line-height: 1;
+    color: var(--htext);
+    margin-top: 1vh;
+}
+
+p{
+    color: var(--ptext);
+    line-height: 1.4;
+    font-size: calc(14px + 0.3vw);
+    font-weight: 500;
+}
+
+.description{
+    text-align: left;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+}
+
+.img img{
+    width: 80%;
+    border-radius: 15%;
+    border: 2px solid var(--border);
+}
+
+.center{
+    text-align: center;
+}
+
+#pool-a table, #fitness-zone table {
+    width: 100%;
+    border-collapse:collapse;
+}
+
+#pool-a th, #fitness-zone th,
+#pool-a td, #fitness-zone td{
+    padding: 15px;
+    text-align: left;
+    vertical-align: top;
+    border: 1.5px solid var(--border);
+}
+
+#pool-a th, #fitness-zone th{
+    width: 30%;
+    vertical-align: middle; 
+    background-color: var(--backGrWhite);
+    font-weight: bold;
+    text-align: center;
+}
+
+#pool-a td, #fitness-zone td{
+    width: 70%;
+    line-height: 1.5;
+}
+
+th, tr{
+    font-size: calc(12px + 0.3vw);
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+tr{
+    color: var(--ptext);
+}
+
+th{
+    color: var(--hover);
+}
+
+.img-sm{
+    width: 30%;
+}
+
+.img-sm img{
+    margin-top: 5px;
+    width: 100%;
+    border-radius: 15%;
+    border: 2px solid var(--border);
+}
+
+span{
+    text-decoration: underline;
+    text-decoration-color: var(--ptext);
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 1px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-left{
+    width: 60%;
+    float: left;
+}
+
+.text-left p{
+    margin: 0;
+}
+
+@media (max-width: 750px) {
+    #pool-c, #pool-a, #sauna-zone, #gym-zone, #fitness-zone, #acafe, #shop{
+        width: 80%;
+    }
+
+    h1, h2{
+        text-align: center;
+    }
+
+    .text-left p{
+        font-size: calc(9px + 0.1vw);
+    }
+}

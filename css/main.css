@@ -1,0 +1,144 @@
+:root{
+    --navBlue: #305296;
+    --backGrWhite: #CBDCEB;
+    --border: #163657;
+    --hover: #033a70;
+    --menuText:#CBDCEB;
+    --htext: #033a70;
+    --ptext: #3A6D8C;
+}
+
+.darkmode{
+    --navBlue: #4f5052;
+    --backGrWhite: #1c1d1f;
+    --border: #23295f;
+    --hover: #405985;
+    --menuText:#CBDCEB;
+    --htext: #405985;
+    --ptext: #A6AEBF;
+}
+
+main{
+    margin-top: calc(80px + 1vh);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.home-img-lg{
+    width: 60%;
+    min-height: 130px;
+    min-width: 260px;
+    border-radius: 45%;
+    border: 5px solid var(--border);
+}
+
+.home-text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    color: var(--htext);
+    text-align: center;
+    line-height: 1;
+    font-size: calc(24px + 1vw);
+    font-weight: 700;
+}
+
+h2{
+    font-size: calc(18px + 1vw);
+    line-height: 1;
+    color: var(--htext);
+    margin-bottom: 0;
+}
+
+p{
+    color: var(--ptext);
+    line-height: 1.4;
+    font-size: calc(14px + 0.3vw);
+    font-weight: 500;
+}
+
+li a{
+    text-decoration: none;
+    color: var(--ptext);
+}
+
+.home-end{
+    width: 100%;
+}
+
+.addrs{
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    align-items: center;
+    width: 100%;
+    gap: 2vw;
+}
+
+.addrs p{
+    margin-top: 0;  
+}
+
+.separate{
+    width: 48%;
+    white-space: nowrap;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.separate:first-child{
+    justify-content: flex-end;
+}
+
+#menu-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#menu-box ul li{
+    text-decoration: underline;
+    text-decoration-color: var(--ptext);
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 1px;
+}
+
+@media (max-width: 750px) {
+
+    .home-text{
+        width: 90%;
+    }
+
+    h2{
+        text-align: center;
+    }
+    .addrs {
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .separate, .separate:first-child{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .home-img-lg{
+        width: 80%;
+    }
+}

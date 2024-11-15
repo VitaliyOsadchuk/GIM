@@ -1,0 +1,147 @@
+:root{
+    --navBlue: #305296;
+    --backGrWhite: #CBDCEB;
+    --border: #163657;
+    --hover: #033a70;
+    --menuText:#CBDCEB;
+    --htext: #033a70;
+    --ptext: #3A6D8C;
+}
+
+.darkmode{
+    --navBlue: #4f5052;
+    --backGrWhite: #1c1d1f;
+    --border: #23295f;
+    --hover: #405985;
+    --menuText:#CBDCEB;
+    --htext: #405985;
+    --ptext: #A6AEBF;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.offers-start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: calc(80px + 1vh);
+    width:80%;
+}
+
+h1{
+    color: var(--htext);
+    text-align: center;
+    line-height: 1;
+    font-size: calc(24px + 1vw);
+    font-weight: 700;
+}
+
+h2,th{
+    font-size: calc(12px + 1vw);
+    line-height: 1;
+    color: var(--htext);
+    margin-top: 1vh;
+}
+
+p,td{
+    color: var(--ptext);
+    line-height: 1.4;
+    font-size: calc(14px + 0.3vw);
+    font-weight: 500;
+}
+
+.offer-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3vh;
+}
+
+.offer{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:2vw;
+}
+
+.offers-img{
+    border-radius: 15%;
+    border: 2px solid var(--border);
+    width: 100%;
+}
+
+.image{
+    width: 30%;
+    min-width: 200px;
+}
+
+.text{
+    width: 80%;
+}
+
+
+table{
+    width: 100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding: 15px;
+    text-align: left;
+    vertical-align: top;
+    border: 1.5px solid var(--border);
+}
+
+th{
+    width: 30%;
+    vertical-align: middle; 
+    background-color: var(--backGrWhite);
+    color: var(--htext);
+    font-weight: bold;
+    text-align: center;
+}
+
+th, tr{
+    font-size: calc(12px + 0.3vw);
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+tr{
+    color: var(--ptext);
+}
+
+span{
+    color: rgb(104, 48, 48);
+}
+
+
+@media (max-width: 750px) {
+    .offers-start{
+        width: 96%;
+    }
+
+    .offer{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+   .image{
+    margin-top: 2vh;
+    width: 80%;
+   }
+
+   td{
+    font-size: calc(12px + 0.1vw);
+   }
+}
+
+
