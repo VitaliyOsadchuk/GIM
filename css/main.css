@@ -19,7 +19,6 @@
 }
 
 main{
-    margin-top: calc(80px + 1vh);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -28,6 +27,8 @@ main{
 }
 
 .home-img{
+    margin-top: calc(80px + 1vh);
+    padding-top: 2vh;
     width: 100%;
     display: flex;
     justify-content: center;
